@@ -1,0 +1,22 @@
+[project]
+name = "self-driving-car"
+version = "1.0.0"
+description = "Behavioral cloning NVIDIA PilotNet en PyTorch pour le simulateur Udacity"
+readme = "README.md"
+requires-python = ">=3.10"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+extend-exclude = ["simulator", "data", "runs"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+filterwarnings = [
+    "ignore::DeprecationWarning",
+    "ignore:\\s*Eventlet is deprecated",
+]

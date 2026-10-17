@@ -1,0 +1,27 @@
+# Environnement Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Simulateur et données téléchargés ou enregistrés (volumineux)
+simulator/
+data/
+runs/
+*.log
+
+# Sorties d'entraînement : seul le modèle de référence est versionné
+models/*
+!models/model.pt
+!models/history.csv
+!models/loss.png
+
+# Fichiers d'outils locaux
+CLAUDE.md
+AGENTS.md
+.claude/
+.cursor/
+
+# Fichiers locaux non publiés
+docs/
+.github/

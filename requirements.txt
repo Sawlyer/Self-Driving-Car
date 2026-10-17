@@ -1,0 +1,17 @@
+# PyTorch avec CUDA 12.8, nécessaire pour les cartes RTX 50xx (Blackwell).
+# Les wheels PyPI par défaut ne contiennent pas les noyaux sm_120.
+--extra-index-url https://download.pytorch.org/whl/cu128
+torch>=2.7
+numpy
+pandas
+opencv-python-headless
+scikit-learn
+matplotlib
+pillow
+eventlet
+# Versions compatibles avec le client Socket.IO du simulateur.
+python-socketio==4.6.1
+python-engineio==3.13.2
+# Développement
+pytest
+ruff
